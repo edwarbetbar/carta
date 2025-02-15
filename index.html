@@ -18,6 +18,19 @@
     </div>
     <div class="options">
       <button id="open">Abrir</button>
+      	      <script>
+        // Crea un objeto de audio con la canción
+        const audio = new Audio('encontre.mp3'); // Asegúrate de tener el archivo en la misma carpeta
+
+        // Función para reproducir la canción al hacer clic
+        document.getElementById('open').addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        });
+    </script>
       <button id="close">Cerrar</butto>
     </div>
   </main>
